@@ -1,0 +1,63 @@
+﻿<Window x:Class="guichet_automatique.frmTransfer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:guichet_automatique"
+        mc:Ignorable="d"
+        Title="frmTransfer" Height="450" Width="800">
+    <Grid Margin="20">
+        <!-- Titre de la fenêtre -->
+        <TextBlock FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,10" Text="Move Money" />
+
+        <!-- Conteneur principal avec des boutons pour chaque option -->
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" >
+
+            <!-- Bouton Pay Bills -->
+            <Button Width="250" Height="50" FontSize="16" Content="Pay Bills" Background="#4CAF50" Foreground="White" BorderBrush="DarkGreen" BorderThickness="2" Padding="10,5" Click="payBills_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <!-- Bouton Transfer Between Accounts -->
+            <Button Width="250" Height="50" FontSize="16" Content="Transfer Between Accounts" Background="#2196F3" Foreground="White" BorderBrush="DarkBlue" BorderThickness="2" Padding="10,5" Click="transferbtn_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <!-- Bouton Interac E-Transfer -->
+            <Button Width="250" Height="50" FontSize="16" Content="withdrawal" Background="#FF5722" Foreground="White" BorderBrush="DarkOrange" BorderThickness="2" Padding="10,5" Click="eTransfer_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <!-- Bouton Deposit a Cheque -->
+            <Button Width="250" Height="50" FontSize="16" Content="Deposit" Background="#9C27B0" Foreground="White"  BorderThickness="2" Padding="10,5" Click="Deposit_Click">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="2" CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+        </StackPanel>
+        <Button Content="Retour à l'accueil" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="12,12,12,22" Click="RetourAccueil_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,18 @@
+﻿<Window x:Class="guichet_automatique.blcAcces"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:guichet_automatique"
+        mc:Ignorable="d"
+        Title="blcAcces" Height="450" Width="800">
+    <Grid>
+        <Label Content="Code Client:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" />
+        <TextBox Name="txtCodeClient" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="120,20,0,0" />
+
+        <Button Name="btnBloquer" Content="Bloquer le compte" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="120,60,0,0" Click="BtnBloquer_Click" />
+        <Button Name="btnDebloquer" Content="Débloquer le compte" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="260,60,0,0" Click="BtnDebloquer_Click" />
+
+        <TextBlock Name="lblMessage" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,100,0,0" Width="350" Height="50" TextWrapping="Wrap" />
+    </Grid>
+</Window>

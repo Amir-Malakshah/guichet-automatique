@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37216.2
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "guichet automatique", "guichet automatique\guichet automatique.csproj", "{F5A89F64-B4A5-4F7D-A16E-1D59FB3E2D31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuichetAutomatique.Api", "GuichetAutomatique.Api\GuichetAutomatique.Api.csproj", "{E2600833-9CF2-4612-B1E7-107340E36704}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{9C8CB701-102D-CF49-A3E0-89AC09D42C2C}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.gitignore = .gitignore
+		Dockerfile.txt = Dockerfile.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5A89F64-B4A5-4F7D-A16E-1D59FB3E2D31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A89F64-B4A5-4F7D-A16E-1D59FB3E2D31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A89F64-B4A5-4F7D-A16E-1D59FB3E2D31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A89F64-B4A5-4F7D-A16E-1D59FB3E2D31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2600833-9CF2-4612-B1E7-107340E36704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2600833-9CF2-4612-B1E7-107340E36704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2600833-9CF2-4612-B1E7-107340E36704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2600833-9CF2-4612-B1E7-107340E36704}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {451F56A5-A1D8-4D22-B5F5-2A483E1C6D1E}
+	EndGlobalSection
+EndGlobal

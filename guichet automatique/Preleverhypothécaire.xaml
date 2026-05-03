@@ -1,0 +1,17 @@
+﻿<Window x:Class="guichet_automatique.Preleverhypothécaire"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:guichet_automatique"
+        mc:Ignorable="d"
+        Title="Preleverhypothécaire" Height="450" Width="800">
+    <Grid Margin="10">
+        <TextBlock Text="montant:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <TextBox Name="txtMontant" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" Width="200" Height="30" VerticalContentAlignment="Center"/>
+        <TextBlock Text="Numero de compte:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,60,0,0"/>
+        <TextBox Name="txtNumeroCompte" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,50,10,10" Width="200" Height="30" VerticalContentAlignment="Center"  />
+
+        <Button Name="btnPrelever" Content="Prélèvement" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,100,10,10" Width="200" Height="50" Click="btnPrelever_Click"/>
+    </Grid>
+</Window>

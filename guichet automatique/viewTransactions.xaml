@@ -1,0 +1,38 @@
+﻿<Window x:Class="guichet_automatique.viewTransactions"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:guichet_automatique"
+        mc:Ignorable="d"
+        Title="viewTransactions" Height="450" Width="800">
+    <Grid Margin="10">
+        <!-- Sélectionner un compte -->
+        <TextBlock Text="Sélectionner un compte:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
+        <ComboBox Name="accountsComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10,40,10,0" >
+        </ComboBox>
+
+        <!-- Sélectionner le type de transaction -->
+        <TextBlock Text="Sélectionner le type de transaction:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,90,0,0"/>
+        <ComboBox Name="transactionTypeComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10,120,10,0">
+            <ComboBoxItem Content="Factures" />
+            <ComboBoxItem Content="Retraits" />
+            <ComboBoxItem Content="Transferts" />
+        </ComboBox>
+
+        <!-- Filtrer par date -->
+        <TextBlock Text="Filtrer par date (optionnel) :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,160,0,0"/>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="10,190,10,0">
+            <TextBlock Text="De :" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <DatePicker Name="startDatePicker" HorizontalAlignment="Left" Margin="0,0,20,0" />
+            <TextBlock Text="À :" VerticalAlignment="Center" Margin="0,0,5,0"/>
+            <DatePicker Name="endDatePicker" HorizontalAlignment="Left" />
+        </StackPanel>
+
+        <!-- Bouton pour afficher les transactions -->
+        <Button Name="loadTransactionsButton" Content="Afficher les transactions" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,240,10,0" Click="LoadTransactionsButton_Click"/>
+
+        <!-- DataGrid pour afficher les transactions -->
+        <DataGrid Name="transactionsDataGrid" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,280,10,10" AutoGenerateColumns="True" IsReadOnly="True"/>
+    </Grid>
+</Window>

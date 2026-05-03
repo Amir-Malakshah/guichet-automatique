@@ -1,0 +1,37 @@
+﻿<Window x:Class="guichet_automatique.CreateAccount"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:guichet_automatique"
+        mc:Ignorable="d"
+        Title="CreateAccount" Height="450" Width="800">
+    <Grid Margin="10">
+        <TextBlock Text="Sélectionner un client:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,0,0,10"/>
+        <ComboBox Name="clientComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,30,0,0" 
+                  SelectionChanged="ClientComboBox_SelectionChanged">
+            
+        </ComboBox>
+
+        <TextBlock Text="Sélectionner le type de compte:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,80,0,10"/>
+        <ComboBox Name="accountTypeComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,110,0,0">
+            <ComboBoxItem Content="Chèque" />
+            <ComboBoxItem Content="Épargne" />
+            <ComboBoxItem Content="Hypothécaire" />
+            <ComboBoxItem Content="Marge de crédit" />
+        </ComboBox>
+
+        <TextBlock Text="Sélectionner l'id de compte:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,160,0,10"/>
+        <ComboBox Name="accountIdComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,190,0,0">
+            <ComboBoxItem Content="5 pour Chèque" />
+            <ComboBoxItem Content="6 pour Épargne" />
+            <ComboBoxItem Content="7 pour Hypothécaire" />
+            <ComboBoxItem Content="8 pour Marge de crédit" />
+        </ComboBox>
+        
+        <TextBlock Text="Solde initial:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,240,0,10"/>
+        <TextBox Name="initialBalanceTextBox" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="0,270,0,0"/>
+
+        <Button Name="createAccountButton" Content="Créer le compte" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10" Click="CreateAccountButton_Click"/>
+    </Grid>
+</Window>
