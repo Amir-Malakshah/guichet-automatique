@@ -14,7 +14,7 @@ namespace guichet_automatique.Services
         {
             _httpClient = new HttpClient
             {
-                BaseAddress = new Uri("https://localhost:5256/")
+                BaseAddress = new Uri("https://guichet-automatique.onrender.com/")
             };
         }
 
