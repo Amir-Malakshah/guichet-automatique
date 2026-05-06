@@ -34,17 +34,7 @@ https://guichet-automatique.onrender.com/swagger
 
 ---
 
-## Screenshots
 
-### Login Screen
-
-![Login](screenshots/login.png)
-
-### Create Client
-
-![Create Client](screenshots/create-client.png)
-
----
 
 ## Technologies
 
